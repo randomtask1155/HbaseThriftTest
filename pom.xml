@@ -6,7 +6,7 @@
 
     <groupId>io.pivotal.support</groupId>
     <artifactId>HbaseThriftTest</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1</version>
 
     <properties>
         <hbase.version>0.96.0-hadoop2-gphd-3.0.1.0</hbase.version>
@@ -28,13 +28,13 @@
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-thrift</artifactId>
             <version>${hbase.version}</version>
-            <scope>runtime</scope>
+            <scope>import</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.thrift</groupId>
             <artifactId>libthrift</artifactId>
             <version>0.9.0</version>
-            <scope>runtime</scope>
+            <scope>import</scope>
         </dependency>
     </dependencies>
 
@@ -45,5 +45,4 @@
             <url>http://repo.spring.io/libs-release</url>
         </repository>
     </repositories>
-
 </project>
